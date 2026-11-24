@@ -51,7 +51,7 @@ section.sec{padding:clamp(3rem,7vw,6rem) 0}
 .door:hover .frame,.door:focus-visible .frame{transform:translateY(-6px)}
 .door:hover .frame img,.door:focus-visible .frame img{opacity:1}
 .door:hover .frame::after{opacity:0}
-.avail{position:absolute;top:.8rem;right:-.2rem;z-index:2;background:#fff;border:2px solid var(--cocoa);border-radius:999px;padding:0 .7rem;font-family:'Shantell Sans';font-weight:700;font-size:.85rem;transform:rotate(6deg);box-shadow:2px 3px 0 rgba(42,23,14,.2)}
+.fw{position:relative}.avail{position:absolute;top:1.2rem;right:-.4rem;z-index:2;background:#fff;border:2px solid var(--cocoa);border-radius:999px;padding:0 .7rem;font-family:'Shantell Sans';font-weight:700;font-size:.85rem;transform:rotate(6deg);box-shadow:2px 3px 0 rgba(42,23,14,.2)}
 .floor{height:1.1rem;background:linear-gradient(var(--cocoa) 0 3px,#e3a85d 3px);margin-top:-1px}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
 .card{border:3px solid var(--cocoa);border-radius:1.5rem;padding:2rem;background:#fff;box-shadow:0 8px 0 var(--cocoa)}
