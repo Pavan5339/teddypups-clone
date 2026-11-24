@@ -7,7 +7,7 @@ function esc(s){return String(s).replace(/[&<>"']/g,function(c){return {'&':'&am
 function title(p){return p.name}
 function doorCard(p){
   return '<a class="door" href="#/puppies/'+p.slug+'"><h3 class="plush">'+esc(p.name)+'</h3><small>'+esc(p.meta)+'</small>'+
-  '<div class="frame" style="--dc:'+p.door+'"><span class="avail">Available</span><img loading="lazy" alt="'+esc(p.name+', '+p.meta)+'" src="'+u(p.cover)+'" style="object-position:'+p.pos+'"></div></a>';
+  '<div class="fw"><span class="avail">Available</span><div class="frame" style="--dc:'+p.door+'"><img loading="lazy" alt="'+esc(p.name+', '+p.meta)+'" src="'+u(p.cover)+'" style="object-position:'+p.pos+'"></div></div></a>';
 }
 function home(){
   var a=P.slice(0,7).map(function(p,i){return '<div class="arch'+(i==1?' tag':'')+'"><span>'+esc(p.breed.split(' ').pop())+'</span><img alt="" src="'+u(p.cover)+'" style="object-position:'+p.pos+'"></div>'}).join('');
